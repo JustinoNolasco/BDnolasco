@@ -1,0 +1,114 @@
+<scrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Base">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        // declaramos los campos de nuestra base de datos en la vista
+        <TextView
+            android:text="id_abarrote"
+            android:layout_width=""
+            android:layout_height="" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_abarrote"/>
+        <TextView
+            android:text="@string/nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nombre"/>
+        <TextView
+            android:text="apellidos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/apellidos"/>
+        <TextView
+            android:text="direccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/direccion"/>
+        <TextView
+            android:text="telefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/telefono"/>
+        <TextView
+            android:text="mercancia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/mercancia"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Alta"
+            android:id="@+id/btn_Alta"
+            android:onClick="Alta"
+            android:layout_weight="1"
+            android:background="#ff4fa3ff"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Actualizar"
+            android:id="@+id/btn_Actualizar"
+            android:onClick="Actualizar"
+            android:layout_weight="1"
+            android:background="#ff43b1ff" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/limpiar"
+            android:id="@+id/btn_limpiar"
+            android:onClick="limpiar"
+            android:background="#ff43b1ff" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Actualizar"
+            android:id="@+id/btn_modificar"
+            android:onClick="modificar"
+            android:layout_weight="1"
+            android:background="#ff43b1ff" />
+
+
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>
+
+</scrollView>
